@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123456
+    initialization-mode: always
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+
+
+  resourcesDirectory: heroes
+  osSeparator: /
+  heroes:
+    - Arya_Stark.json
+    - Bran_Stark.json
+    - Catelyn_Stark.json
+    - Cersei_Lannister.json
+    - Daenerus_Targaryen.json
+    - Jami_Lannister.json
+    - Jon_Snow.json
+    - Margaery_Tyrell.json
+    - Ned_Stark.json
+    - Oberyn_Martell.json
+    - Olenna_Tyrell.json
+    - Robb_Stark.json
+    - Robert_Baratheron.json
+    - Samwell_Tarly.json
+    - Sansa_Stark.json
+    - Stannis_Baratheon.json
+    - Theon_Greyjoy.json
+    - Tyrion_Lannister.json
+    - Yara_Greyjoy.json
