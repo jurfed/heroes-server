@@ -31,9 +31,8 @@ public class ServerMainClass {
 	@PostConstruct
     void insertData() {
 		try {
-			logger.info("The server is deployed");
 			insertDataFromJsonToDb.insertIntoDatabase();
-			logger.info("The database is filled with data");
+			logger.info("The database is filled by data");
 
 		} catch (Throwable throwable) {
 			throwable.printStackTrace();
